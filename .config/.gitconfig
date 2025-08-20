@@ -1,0 +1,12 @@
+[user]
+	name = RiwiHow
+	email = 53964574+RiwiHow@users.noreply.github.com
+	signingkey = F464A51A8675EE2F
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = master
+[push]
+	default = simple

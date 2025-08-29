@@ -2,11 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# macOS
-set -gx XDG_CONFIG_HOME $HOME/.config
-
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# bun
+set -gx BUN_INSTALL_CACHE_DIR $HOME/.cache/bun
 
 # less
 set -gx LESSHISTFILE -

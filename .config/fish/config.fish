@@ -4,6 +4,7 @@ end
 
 # macOS
 set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_CACHE_HOME $HOME/.cache
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"

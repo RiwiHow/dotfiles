@@ -5,17 +5,89 @@
       "complex_modifications": {
         "rules": [
           {
-            "description": "Map Command + Mouse Button 4 to Command + M",
+            "description": "Use mouse4 to minimize windows",
             "manipulators": [
               {
                 "from": {
-                  "pointing_button": "button4",
-                  "modifiers": { "mandatory": ["command"] }
+                  "modifiers": { "mandatory": ["command"] },
+                  "pointing_button": "button4"
                 },
                 "to": [
                   {
                     "key_code": "m",
                     "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Use mouse5 to fill windows",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": { "mandatory": ["command"] },
+                  "pointing_button": "button5"
+                },
+                "to": [
+                  {
+                    "key_code": "f",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Use mouse1 to left windows",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": { "mandatory": ["command"] },
+                  "pointing_button": "button1"
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Use mouse2 to right windows",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": { "mandatory": ["command"] },
+                  "pointing_button": "button2"
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Use mouse3 to restore windows",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": { "mandatory": ["command"] },
+                  "pointing_button": "button3"
+                },
+                "to": [
+                  {
+                    "key_code": "r",
+                    "modifiers": ["left_control", "fn"]
                   }
                 ],
                 "type": "basic"

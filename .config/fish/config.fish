@@ -10,7 +10,7 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # bun
-set -gx BUN_INSTALL_CACHE_DIR $HOME/.cache/bun
+set -gx BUN_INSTALL_CACHE_DIR $XDG_CACHE_HOME/bun
 set -gx BUN_INSTALL_GLOBAL_DIR $HOME/.local/bun/global
 set -gx BUN_INSTALL_BIN $HOME/.local/bun/bin
 
@@ -18,11 +18,11 @@ set -gx BUN_INSTALL_BIN $HOME/.local/bun/bin
 set -gx LESSHISTFILE -
 
 # uv
-set -gx PATH /Users/riwihow/.local/uv/bin $PATH
+set -gx PATH $HOME/.local/uv/bin $PATH
 
 # gnupg
-set -gx GNUPGHOME /Users/riwihow/.config/gnupg
+set -gx GNUPGHOME $XDG_CONFIG_HOME/gnupg
 set -gx GPG_TTY $(tty)
 
 # git
-set -gx GIT_CONFIG_GLOBAL /Users/riwihow/.config/.gitconfig
+set -gx GIT_CONFIG_GLOBAL $XDG_CONFIG_HOME/.gitconfig

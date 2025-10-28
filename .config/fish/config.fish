@@ -18,7 +18,7 @@ set -gx BUN_INSTALL_BIN $HOME/.local/bun/bin
 set -gx LESSHISTFILE -
 
 # uv
-set -gx PATH $HOME/.local/uv/bin $PATH
+set -gx PATH $HOME/.local/bin $PATH
 
 # gnupg
 set -gx GNUPGHOME $XDG_CONFIG_HOME/gnupg

@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# fish
+set -g fish_greeting
+
 # macOS
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_CACHE_HOME $HOME/.cache
@@ -26,3 +29,7 @@ set -gx GPG_TTY $(tty)
 
 # git
 set -gx GIT_CONFIG_GLOBAL $XDG_CONFIG_HOME/.gitconfig
+
+# ipython
+set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
+

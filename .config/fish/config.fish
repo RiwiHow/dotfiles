@@ -33,3 +33,6 @@ set -gx GIT_CONFIG_GLOBAL $XDG_CONFIG_HOME/.gitconfig
 # ipython
 set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
 
+# Python
+set -gx PYTHON_HISTORY $XDG_CACHE_HOME/.python_history
+

@@ -1,0 +1,114 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "inline_code_actions": false,
+  "toolbar": {
+    "code_actions": false
+  },
+  "title_bar": {
+    "show_branch_status_icon": false,
+  },
+  "tabs": {
+    "git_status": false,
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "show_edit_predictions": false,
+  "disable_ai": false,
+  "file_finder": {
+    "file_icons": true,
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "font_family": ".ZedMono",
+    "font_weight": 400.0,
+    "font_size": 15.0,
+    "show_count_badge": false,
+    "flexible": false,
+    "dock": "right",
+  },
+  "agent_servers": {},
+  "use_system_path_prompts": true,
+  "use_system_prompts": false,
+  "project_panel": {
+    "sticky_scroll": true,
+    "git_status_indicator": true,
+    "scrollbar": {
+      "horizontal_scroll": true,
+    },
+    "bold_folder_labels": false,
+    "indent_size": 20.0,
+    "git_status": true,
+    "hide_hidden": false,
+    "hide_root": true,
+    "hide_gitignore": true,
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "context_servers": {
+    "mcp-server-mui": {
+      "enabled": true,
+      "settings": {
+        "preferred_theme": "",
+        "component_filter": [""],
+      },
+    },
+  },
+  "agent": {
+    "button": true,
+    "dock": "right",
+    "default_profile": "write",
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+    },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+    },
+    "model_parameters": [],
+  },
+  "icon_theme": "Zed (Default)",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  // "languages": {
+  //   "TypeScript": {
+  //     "language_servers": ["typescript-language-server", "!vtsls", "..."],
+  //   },
+  //   "TSX": {
+  //     "language_servers": ["typescript-language-server", "!vtsls", "..."],
+  //   },
+  //   "JavaScript": {
+  //     "language_servers": ["typescript-language-server", "!vtsls", "..."],
+  //   },
+  // },
+}

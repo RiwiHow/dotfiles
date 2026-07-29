@@ -47,7 +47,3 @@ set -gx PI_CODING_AGENT_DIR $XDG_CONFIG_HOME/pi
 
 # npm
 set -gx npm_config_cache $XDG_CACHE_HOME/npm
-
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/iwi/.lmstudio/bin
-# End of LM Studio CLI section
